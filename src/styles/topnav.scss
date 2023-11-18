@@ -1,0 +1,30 @@
+#topnav-responsive-container {
+    background-color: #51625C;
+    height: 30px;
+    position: relative;
+    z-index: 200;
+    #topnav-responsive-container-grid {
+        height: inherit;
+        #top-nav-responsive-grid {
+            height: inherit;
+            display: flex;
+            justify-content: end;
+            #top-nav-elements  {
+                height: inherit;
+                display: grid;
+                grid-template-columns: 15px 150px 20px 50px;
+                color: white;
+                place-content: center;
+                align-items: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.divider {
+    width:1px;
+    height: 18px;
+    background-color: white;
+}

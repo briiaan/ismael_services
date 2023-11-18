@@ -1,0 +1,125 @@
+---
+import Topnav from "../components/Topnav"
+import Navbar from "../components/Navbar"
+import "../styles/default.scss"
+import "../styles/services.scss"
+import commercial from "../images/commercial_cleaning.jpg"
+import landscaping from "../images/landscaping_house.jpg"
+import cement from "../images/cement_services.jpg"
+import Information from "../components/Information"
+import Footer from "../components/Footer"
+---
+<html lang="en">
+	<head>
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width" />
+			<title>Ismael Services | Services for the Greater Denver Area</title>
+			<meta name="description" content="Based in Seattle, Washington, we have experience spanning almost a decade and we strive to deliver quality
+			construction projects.">
+			<meta property="og:title" content="Ismael Services | Services for the Greater Denver Area"/>
+			<meta property="og:site_name" content="Ismael Services"/>
+			<meta property="og:type" content="website"/>
+			<script type="application/ld+json">
+							{
+					 	   "@context" : "https://schema.org",
+							"@type" : "LocalBusiness",
+							"areaServed": {
+							"@type": "GeoCircle",
+							"geoMidpoint": {
+								"@type": "GeoCoordinates",
+								"latitude": 39.7392,
+								"longitude": 104.9903
+							},
+							"geoRadius": 100
+						},
+						"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+						"knowsAbout" : "Housekeeping, Janitorial, Cement, Landscaping, Garden, Custodial, Office Cleaning",
+						"knowsLanguage" : "English, Spanish",
+						"currenciesAccepted" : "USD",
+						"priceRange" : "Request a Free Consultation",
+						"name" : "Ismael Services",
+					}
+			</script>
+			<script type="application/ld+json">
+					{
+				   "@context" : "https://schema.org",
+					"@type" : "WebSite",
+					"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+					"name" : "Ismael Services",
+			}
+	</script>
+		</head>
+	</head>
+	<body onclick="opacityOn()">
+		<div id="homepage-cover">
+		<Topnav/>
+		<Navbar transparent={true} client:only="react"/>
+		</div>
+		</div>
+		<div id="services-container">
+			<div id="introduction-container">
+			<p id="introduction-p">Our <br/>Services</p>
+		</div>
+    </div>
+	<div id="responsive-services-grid-box">
+		<div id="homepage-quick-services">
+			<div id='box' class="mb">
+				<div id='main' class="noselect" onmouseover="opacity(this)" onmouseleave="opacityOn(this)" onmousedown="opacity(this)" onmouseout="opacityOn(this)">
+					<div id="box-green-container">
+					<div id="box-front">
+					<img id="vacuum" src={commercial.src}/>
+					<div class="back-information" id="vacuum-information"><p>From regular house cleaning to deep cleaning, office maintenance, and post-construction cleanup, our cleaning services are designed to make your spaces spotless and inviting. We understand the importance of a clean environment for your well-being and productivity.</p></div></div>
+			</div>
+			</div>
+			<div id="description-box">
+				<p id="description">Commercial Cleaning</p>
+			</div>
+			</div>
+			<div id='box' class="mb">
+				<div id='main' class="noselect" onmouseover="opacity(this)" onmouseleave="opacityOn(this)" onmousedown="opacity(this)" onmouseout="opacityOn(this)">
+					<div id="box-green-container">
+					<div id="box-front">
+						<img  src={landscaping.src}/>
+					<div class="back-information" id="vacuum-information"><p>Enhance the beauty of your outdoor spaces with our landscaping and lawn care services. We offer lawn mowing, garden design, tree care, and hardscaping services to transform your property into a green oasis.</p></div></div>
+			</div>
+			</div>
+			<div id="description-box">
+				<p id="description">Landscape Services</p>
+			</div>
+			</div>
+			<div id='box' class="mb"> 
+				<div id='main' class="noselect" onmouseover="opacity(this)" onmouseleave="opacityOn(this)" onmousedown="opacity(this)" onmouseout="opacityOn(this)">
+					<div id="box-green-container">
+					<div id="box-front">
+						<img src={cement.src}/>
+					<div class="back-information" id="vacuum-information"><p>We’re committed to building solid foundations, beautiful surfaces, and lasting relationships with our clients. Let us bring your concrete visions to life with craftsmanship and excellence.</p></div></div>
+			</div>
+			</div>
+			<div id="description-box">
+				<p id="description">Concrete Services</p>
+			</div>
+			</div>
+		</div>
+	</div>
+
+		<div id="divider-responsive" class="mb">
+			<div id="divider-container">
+				<div id="divider">
+				</div>
+			</div>
+		</div>
+		<Information/>
+		<Footer/>
+	</body>
+	<script is:inline>
+		function opacity(element) {
+			element.childNodes[0].childNodes[0].childNodes[0].style.opacity = "20%";
+			element.childNodes[0].childNodes[0].childNodes[1].style.opacity = "100%"
+		}
+		function opacityOn(element){ 
+			element.childNodes[0].childNodes[0].childNodes[0].style.opacity = "100%";
+			element.childNodes[0].childNodes[0].childNodes[1].style.opacity = "0%"
+		}
+	</script>
+</html>

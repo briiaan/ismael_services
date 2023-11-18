@@ -1,0 +1,86 @@
+---
+import Topnav from "../components/Topnav"
+import Navbar from "../components/Navbar"
+import "../styles/default.scss"
+import img from "../images/cement.jpg"
+import "../styles/homepage.scss"
+import Information from "../components/Information"
+import Footer from "../components/Footer"
+import "../styles/pages.scss"
+---
+<html lang="en">
+	<head>
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width" />
+			<title>Ismael Services | Services for the Greater Denver Area</title>
+			<meta name="description" content="Based in Seattle, Washington, we have experience spanning almost a decade and we strive to deliver quality
+			construction projects.">
+			<meta property="og:title" content="Ismael Services | Services for the Greater Denver Area"/>
+			<meta property="og:site_name" content="Ismael Services"/>
+			<meta property="og:type" content="website"/>
+			<script type="application/ld+json">
+							{
+						   "@context" : "https://schema.org",
+							"@type" : "LocalBusiness",
+							"areaServed": {
+							"@type": "GeoCircle",
+							"geoMidpoint": {
+								"@type": "GeoCoordinates",
+								"latitude": 39.7392,
+								"longitude": 104.9903
+							},
+							"geoRadius": 100
+						},
+						"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+						"knowsAbout" : "Housekeeping, Janitorial, Cement, Landscaping, Garden, Custodial, Office Cleaning",
+						"knowsLanguage" : "English, Spanish",
+						"currenciesAccepted" : "USD",
+						"priceRange" : "Request a Free Consultation",
+						"name" : "Ismael Services",
+					}
+			</script>
+			<script type="application/ld+json">
+					{
+				   "@context" : "https://schema.org",
+					"@type" : "WebSite",
+					"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+					"name" : "Ismael Services",
+			}
+	</script>
+		</head>
+	</head>
+	<body onclick="opacityOn()">
+		<div id="homepage-cover">
+		<Topnav/>
+		<Navbar transparent={false} client:only="react"/>
+        <div id="image-container">
+            <img src={img.src}/>
+    </div>
+        <div id="banner"><p>CONCRETE SERVICES</p></div>
+			<div id="image-cover">
+        </div>
+        <div id="about-us">
+            <div id='about-us-container-responsive'>
+                <div id="about-us-container-inner">
+                    <div id="about-us-text">
+						<p class="body-pages mb">Established with a vision for excellence and a commitment to building a sustainable future, we take pride in providing high-quality cement that stands as the cornerstone of resilient constructions.</p>
+							<p class="title-pages mb black">Concrete Services We <br/>Specialize In</p>
+                        <p class="title-pages mb">Concrete Installation</p>
+                        <p class="body-pages mb">We specialize in expert concrete installation, offering a range of options for residential, commercial, and industrial projects. Whether you need a new concrete driveway, patio, foundation, or flooring, our skilled team can handle it all.</p>
+                        <p class="title-pages mb">Decorative Concrete</p>
+                        <p class="body-pages mb">Elevate your space with our decorative concrete options. From stamped concrete that mimics natural stone to stained and colored finishes, we transform ordinary surfaces into works of art.</p>
+						<p class="title-pages mb">Concrete Repair and Restoration</p>
+						<p class="body-pages mb">Extend the life of your existing concrete with our repair and restoration services. We fix cracks, spalling, and other issues to restore your concrete to its original glory.</p>
+						<p class="title-pages mb">Concrete Resurfacing</p>
+						<p class="body-pages mb">If your concrete is worn or faded, our resurfacing solutions provide a cost-effective way to rejuvenate your surfaces. We apply overlays that not only refresh but also protect your concrete.</p>
+						<p class="title-pages mb">Concrete Sealing</p>
+						<p class="body-pages mb">Protect your investment with our concrete sealing services. We use high-quality sealants to shield your concrete from moisture, stains, and the elements, ensuring longevity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<Information/>
+		<Footer/>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+#footer {
+    background: #51625C;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900; 
+    #footer-elements {
+        display: grid;
+        place-content: center;
+        #footer-grid-elements {
+            display: grid;
+            height: 150px;
+            grid-template-columns: 110px 116px;
+            gap: 10px;
+            text-align: starst;
+            place-content: center;
+        }
+        #copyright {
+            font-size: 16px;
+        }
+    }
+}

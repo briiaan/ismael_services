@@ -1,0 +1,143 @@
+---
+import Topnav from "../components/Topnav"
+import Navbar from "../components/Navbar"
+import "../styles/default.scss"
+import img from "../images/ismael_services_cover.jpg"
+import "../styles/homepage.scss"
+import Information from "../components/Information"
+import Footer from "../components/Footer"
+---
+<html lang="en">
+	<head>
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width" />
+			<title>Ismael Services | Services for the Greater Denver Area</title>
+			<meta name="description" content="Based in Seattle, Washington, we have experience spanning almost a decade and we strive to deliver quality
+			construction projects.">
+			<meta property="og:title" content="Ismael Services | Services for the Greater Denver Area"/>
+			<meta property="og:site_name" content="Ismael Services"/>
+			<meta property="og:type" content="website"/>
+			<script type="application/ld+json">
+							{
+						   "@context" : "https://schema.org",
+							"@type" : "LocalBusiness",
+							"areaServed": {
+							"@type": "GeoCircle",
+							"geoMidpoint": {
+								"@type": "GeoCoordinates",
+								"latitude": 39.7392,
+								"longitude": 104.9903
+							},
+							"geoRadius": 100
+						},
+						"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+						"knowsAbout" : "Housekeeping, Janitorial, Cement, Landscaping, Garden, Custodial, Office Cleaning",
+						"knowsLanguage" : "English, Spanish",
+						"currenciesAccepted" : "USD",
+						"priceRange" : "Request a Free Consultation",
+						"name" : "Ismael Services",
+					}
+			</script>
+			<script type="application/ld+json">
+					{
+				   "@context" : "https://schema.org",
+					"@type" : "WebSite",
+					"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+					"name" : "Ismael Services",
+			}
+	</script>
+		</head>
+	</head>
+	<body onclick="opacityOn">
+		<div id="homepage-cover">
+		<Topnav/>
+		<Navbar transparent={false} client:only="react"/>
+		<div id="homepage-text"><p>Ismael Services is your trusted partner for a wide range of general services designed to make your life easier.</p></div>
+			<div id="image-cover"></div>
+			<div id="image-container"><img src={img.src}/>
+		</div>
+		</div>
+		<div id="green-banner">
+			<p id="green-banner-p">We offer a variety of services such as Commercial Cleaning, Landscaping, and Concrete Services.</p>
+		</div>
+		<div id='banner-responsive'>
+		<div id="introduction-container-intro">
+			<p id="introduction-p-intro">We Serve The<br> Greater Denver Area</p>
+		</div>
+	</div>
+		<div id="responsive-container-homepage">
+		<div id="homepage-quick-services">
+			<div id='box' class="mb">
+				<div id='main' class="noselect" onmouseover="opacity(this)" onmouseleave="opacityOn(this)" onmousedown="opacity(this)" onmouseout="opacityOn(this)">
+					<div id="box-green-container">
+					<div id="box-front">
+					<svg id='vacuum' width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_575_80)">
+					<path d="M48.9699 105.658C41.1877 105.658 34.8525 111.993 34.8525 119.775C34.8525 127.56 41.1877 133.892 48.9699 133.892C56.7552 133.892 63.0873 127.56 63.0873 119.775C63.0873 111.993 56.7549 105.658 48.9699 105.658Z" fill="white"/>
+					<path d="M123.087 112.716V96.834H115.366V28.0851C115.366 14.8678 104.613 4.11499 91.3957 4.11499H52.7933C39.5759 4.11499 28.8231 14.8678 28.8231 28.0851V46.4966C11.8409 54.1908 0 71.3021 0 91.1283V124.937H26.6145C26.2322 123.278 26.0292 121.548 26.0292 119.775C26.0292 107.125 36.3201 96.834 48.9699 96.834C50.4789 96.834 51.9523 96.9811 53.3816 97.2604V42.1586H48.9699C45.0729 42.1586 41.2817 42.6173 37.6465 43.4822V28.0851C37.6465 19.7354 44.4404 12.9384 52.7933 12.9384H91.3957C99.7486 12.9384 106.542 19.7354 106.542 28.0851V96.834H98.9693V112.716H76.4695V139.885L143.989 139.876L144 112.715L123.087 112.716ZM39.1878 62.0582V69.4816H31.7644V62.0582H39.1878Z" fill="white"/>
+					</g>
+					<defs>
+					<clipPath id="clip0_575_80">
+					<rect width="144" height="144" fill="white"/>
+					</clipPath>
+					</defs>
+					</svg> 
+					<div class="back-information" id="vacuum-information"><p>Our professional janitorial team keeps your facility in impeccable condition, providing daily, weekly, or customized cleaning schedules to meet your specific requirements.</p></div></div>
+			</div>
+			</div>
+			<div id="description-box">
+				<p id="description">Commercial Cleaning</p>
+			</div>
+			</div>
+			<div id='box' class="mb">
+				<div id='main' class="noselect" onmouseover="opacity(this)" onmouseleave="opacityOn(this)" onmousedown="opacity(this)" onmouseout="opacityOn(this)">
+					<div id="box-green-container">
+					<div id="box-front">
+						<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M100.328 75.541H76.7213V59.8034H81.4427C84.0502 59.8034 86.164 57.6895 86.164 55.082V14.7941C86.164 7.40085 80.7728 0.786134 73.4144 0.0692273C64.9716 -0.753991 57.8363 5.88688 57.8363 14.1638V55.0817C57.8363 57.6892 59.9501 59.8031 62.5576 59.8031H67.2789V75.5407H43.6725C41.0645 75.5407 38.9512 77.654 38.9512 80.262V86.348C38.9512 109.248 50.3274 130.503 69.3816 143.207C70.9675 144.264 73.0333 144.264 74.6193 143.207C93.6737 130.503 105.05 109.247 105.05 86.348V80.262C105.049 77.654 102.936 75.541 100.328 75.541Z" fill="white"/>
+							</svg>  
+					<div class="back-information" id="vacuum-information"><p>Our expert landscape designers work closely with you to create a custom landscape design that brings your vision to life. We blend aesthetics, functionality, and sustainability to craft outdoor spaces.</p></div></div>
+			</div>
+			</div>
+			<div id="description-box">
+				<p id="description">Landscape Services</p>
+			</div>
+			</div>
+			<div id='box' class="mb"> 
+				<div id='main' class="noselect" onmouseover="opacity(this)" onmouseleave="opacityOn(this)" onmousedown="opacity(this)" onmouseout="opacityOn(this)">
+					<div id="box-green-container">
+					<div id="box-front">
+						<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M109.8 105.3C113.85 102.6 117 99.0001 119.7 94.5001H130.5C133.2 94.5001 135 92.7001 135 90.0001C135 87.3 133.2 85.5001 130.5 85.5001H117C115.2 85.5001 113.85 86.4001 112.95 88.2001C110.7 92.7001 107.1 96.3 103.05 99.0001L94.5 90.9001L113.85 59.85C114.75 58.5 114.75 56.7 113.85 55.35C107.55 43.2 96.75 31.5 82.35 22.5C79.2 20.7 76.05 18.9 73.35 17.55L33.75 81C36.45 83.2501 39.6 85.5 42.75 87.3C44.1 88.2001 45 88.65 46.35 89.1L35.55 101.25C32.85 99.9 30.15 99.0001 27 99.0001C17.1 99.0001 9 107.1 9 117C9 126.9 17.1 135 27 135C36.9 135 45 126.9 45 117C45 115.65 44.55 113.85 44.55 112.5H88.2C93.15 112.5 97.65 111.6 102.15 109.8L127.8 133.65C128.7 134.55 129.6 135 130.95 135C132.3 135 133.2 134.55 134.1 133.65C135.9 131.85 135.9 129.15 134.1 127.35L109.8 105.3ZM27 126C22.05 126 18 121.95 18 117C18 112.05 22.05 108 27 108C27.45 108 28.35 108 28.8 108L23.4 113.85C21.6 115.65 22.05 118.35 23.85 120.15C24.75 121.05 26.1 121.5 27 121.5C28.35 121.5 29.25 121.05 30.15 120.15L35.55 114.3C36 115.2 36 116.1 36 117C36 121.95 31.95 126 27 126ZM87.75 103.5H45L54 93.1501C64.8 98.1001 75.6 100.8 85.5 100.8C86.85 100.8 88.65 99.9 89.1 98.55L93.6 102.6C92.25 103.05 90 103.5 87.75 103.5Z" fill="white"/>
+							<path d="M26.55 74.7L64.8 13.95C56.25 10.8 47.7 9 39.6 9C37.8 9 36.45 9.9 35.55 11.25L11.25 49.95C10.35 51.3 10.35 53.1 11.25 54.45C14.85 61.65 20.25 68.4 26.55 74.7Z" fill="white"/>
+							</svg> 
+					<div class="back-information" id="vacuum-information"><p>Elevate your space with our decorative concrete options. From stamped concrete that mimics natural stone to stained and colored finishes, we transform ordinary surfaces into works of art.</p></div></div>
+			</div>
+			</div>
+			<div id="description-box">
+				<p id="description">Concrete Services</p>
+			</div>
+			</div>
+		</div>
+	</div>
+		<div id="divider-responsive" class="mb">
+			<div id="divider-container">
+				<div id="divider">
+				</div>
+			</div>
+		</div>
+		<Information/>
+		<Footer/>
+	</body>
+	<script is:inline>
+		function opacity(element) {
+			element.childNodes[0].childNodes[0].childNodes[0].style.opacity = "20%";
+			element.childNodes[0].childNodes[0].childNodes[1].style.opacity = "100%"
+		}
+		function opacityOn(element){ 
+			element.childNodes[0].childNodes[0].childNodes[0].style.opacity = "100%";
+			element.childNodes[0].childNodes[0].childNodes[1].style.opacity = "0%"
+		}
+	</script>
+</html>

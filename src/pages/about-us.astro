@@ -1,0 +1,83 @@
+---
+import Topnav from "../components/Topnav"
+import Navbar from "../components/Navbar"
+import "../styles/default.scss"
+import img from "../images/denver.jpg"
+import "../styles/homepage.scss"
+import Information from "../components/Information"
+import Footer from "../components/Footer"
+import "../styles/about-us.scss"
+---
+<html lang="en">
+	<head>
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width" />
+			<title>Ismael Services | Services for the Greater Denver Area</title>
+			<meta name="description" content="Based in Seattle, Washington, we have experience spanning almost a decade and we strive to deliver quality
+			construction projects.">
+			<meta property="og:title" content="Ismael Services | Services for the Greater Denver Area"/>
+			<meta property="og:site_name" content="Ismael Services"/>
+			<meta property="og:type" content="website"/>
+			<script type="application/ld+json">
+							{
+						   "@context" : "https://schema.org",
+							"@type" : "LocalBusiness",
+							"areaServed": {
+							"@type": "GeoCircle",
+							"geoMidpoint": {
+								"@type": "GeoCoordinates",
+								"latitude": 39.7392,
+								"longitude": 104.9903
+							},
+							"geoRadius": 100
+						},
+						"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+						"knowsAbout" : "Housekeeping, Janitorial, Cement, Landscaping, Garden, Custodial, Office Cleaning",
+						"knowsLanguage" : "English, Spanish",
+						"currenciesAccepted" : "USD",
+						"priceRange" : "Request a Free Consultation",
+						"name" : "Ismael Services",
+					}
+			</script>
+			<script type="application/ld+json">
+					{
+				   "@context" : "https://schema.org",
+					"@type" : "WebSite",
+					"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+					"name" : "Ismael Services",
+			}
+	</script>
+		</head>
+	</head>
+	<body onclick="opacityOn()">
+		<div id="homepage-cover">
+		<Topnav/>
+		<Navbar transparent={false} client:only="react"/>
+        <div id="image-container">
+            <img src={img.src}/>
+    </div>
+        <div id="banner"><p>ABOUT US</p></div>
+			<div id="image-cover">
+        </div>
+        <div id="about-us">
+            <div id='about-us-container-responsive'>
+                <div id="about-us-container-inner">
+                    <div id="about-us-text">
+                        <p class="title-about mb">Who We Are</p>
+                        <p class="body-about mb">Our services are designed to cater to the diverse needs 
+                            of the vibrant Denver community. With a deep commitment to excellence, 
+                            professionalism, and customer satisfaction, we take pride in being a local provider of high-quality solutions 
+                            for both residential and commercial needs.</p>
+                        <p class="title-about mb">Our Mission</p>
+                        <p class="body-about">At Ismael Services, our mission is to simplify the lives of Denver residents and businesses by offering reliable, 
+                            efficient, and top-notch services. We understand that your time is valuable, and your spaces should be clean, well-maintained, and 
+                            secure. Our dedicated team is here to make that happen, so you can focus on what matters most to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<Information/>
+		<Footer/>
+	</body>
+</html>

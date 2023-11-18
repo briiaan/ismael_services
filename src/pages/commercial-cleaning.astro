@@ -1,0 +1,88 @@
+---
+import Topnav from "../components/Topnav"
+import Navbar from "../components/Navbar"
+import "../styles/default.scss"
+import img from "../images/cleaning-window.jpg"
+import "../styles/homepage.scss"
+import Information from "../components/Information"
+import Footer from "../components/Footer"
+import "../styles/pages.scss"
+---
+<html lang="en">
+	<head>
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width" />
+			<title>Ismael Services | Services for the Greater Denver Area</title>
+			<meta name="description" content="Based in Seattle, Washington, we have experience spanning almost a decade and we strive to deliver quality
+			construction projects.">
+			<meta property="og:title" content="Ismael Services | Services for the Greater Denver Area"/>
+			<meta property="og:site_name" content="Ismael Services"/>
+			<meta property="og:type" content="website"/>
+			<script type="application/ld+json">
+							{
+						   "@context" : "https://schema.org",
+							"@type" : "LocalBusiness",
+							"areaServed": {
+							"@type": "GeoCircle",
+							"geoMidpoint": {
+								"@type": "GeoCoordinates",
+								"latitude": 39.7392,
+								"longitude": 104.9903
+							},
+							"geoRadius": 100
+						},
+						"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+						"knowsAbout" : "Housekeeping, Janitorial, Cement, Landscaping, Garden, Custodial, Office Cleaning",
+						"knowsLanguage" : "English, Spanish",
+						"currenciesAccepted" : "USD",
+						"priceRange" : "Request a Free Consultation",
+						"name" : "Ismael Services",
+					}
+			</script>
+			<script type="application/ld+json">
+					{
+				   "@context" : "https://schema.org",
+					"@type" : "WebSite",
+					"keywords" : "services, housekeeping, management, cement, janitorial, custodian, cleaning",
+					"name" : "Ismael Services",
+			}
+	</script>
+		</head>
+	</head>
+	<body onclick="opacityOn()">
+		<div id="homepage-cover">
+		<Topnav/>
+		<Navbar transparent={false} client:only="react"/>
+        <div id="image-container">
+            <img src={img.src}/>
+    </div>
+        <div id="banner"><p>COMMERCIAL SERVICES</p></div>
+			<div id="image-cover">
+        </div>
+		<div id="about-us">
+            <div id='about-us-container-responsive'>
+                <div id="about-us-container-inner">
+                    <div id="about-us-text">
+						<p class="body-pages mb">We specialize in providing top-tier commercial cleaning solutions tailored to the unique needs of businesses across various industries. With a strong commitment to excellence and hygiene, we have established ourselves as a trusted partner for maintaining clean and healthy workspaces.</p>
+							<p class="title-pages mb black">Commerical Cleaning <br/>We Specialize In</p>
+                        <p class="title-pages mb">Office Cleaning</p>
+                        <p class="body-pages mb">We offer comprehensive office cleaning services that ensure a pristine and productive work environment. From cubicles to boardrooms, we pay meticulous attention to detail.</p>
+                        <p class="title-pages mb">Janitorial Services</p>
+                        <p class="body-pages mb">Our professional janitorial team keeps your facility in impeccable condition, providing daily, weekly, or customized cleaning schedules to meet your specific requirements.</p>
+						<p class="title-pages mb">Commerical Floor Care</p>
+						<p class="body-pages mb">We specialize in floor care services, including floor stripping, waxing, and buffing, to maintain the longevity and appearance of your flooring.</p>
+						<p class="title-pages mb">Carpet Cleaning</p>
+						<p class="body-pages mb">Our advanced carpet cleaning methods remove dirt, stains, and allergens, leaving your carpets fresh and inviting.</p>
+						<p class="title-pages mb">Window Cleaning</p>
+						<p class="body-pages mb">We provide streak-free window cleaning services, ensuring your workspace is bathed in natural light and showcases a pristine exterior.</p>
+						<p class="title-pages mb">Specialized Cleaning</p>
+						<p class="body-pages">From healthcare facilities to industrial spaces, we offer specialized cleaning services that adhere to industry-specific standards and regulations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<Information/>
+		<Footer/>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+---
+import Topnav from "../components/Topnav"
+import Navbar from "../components/Navbar"
+import "../styles/default.scss"
+import "../styles/services.scss"
+import commercial from "../images/commercial_cleaning.jpg"
+import landscaping from "../images/landscaping_house.jpg"
+import cement from "../images/cement_services.jpg"
+import Information from "../components/Information"
+import Footer from "../components/Footer"
+---
+<html lang="en">
+	<head>
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width" />
+			<title>Page Not Found</title>
+			<meta name="description" content="Based in Seattle, Washington, we have experience spanning almost a decade and we strive to deliver quality
+			construction projects.">
+			<meta property="og:title" content="Ismael Services | Services for the Greater Denver Area"/>
+			<meta property="og:site_name" content="Ismael Services"/>
+			<meta property="og:type" content="website"/>
+		</head>
+	</head>
+	<body onclick="opacityOn()">
+		<div id="homepage-cover">
+		<Topnav/>
+		<Navbar transparent={true} client:only="react"/>
+		</div>
+		</div>
+		<div id="homepage-quick-services">
+            <div id="services-container">
+			<div id="introduction-container">
+			<p id="introduction-p">404</p>
+            <p id="error-desc">Aplogies we could not fetch the page you wanted.</p>
+		</div>
+    </div>
+    </div>
+		<Footer/>
+	</body>
+</html>

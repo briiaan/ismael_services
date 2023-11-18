@@ -1,0 +1,79 @@
+@import url(https://fonts.bunny.net/css?family=roboto:100,300,400,500,700,900|staatliches:400);
+
+body, div, p, a, * {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: fit-content;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mb1 {
+    margin-bottom: 10px;
+}
+
+.title-about {
+    color: #7E655A;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.body-about {
+    color: #42413F;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.title-pages {
+    color: #F17F50; 
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.body-pages {
+    color: #42413F;
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.black {
+    color: #42413F; 
+}
+
+.weight24 {
+    font-size: 24px; 
+}
+
+.font_roboto {
+    font-family: Roboto;
+}
