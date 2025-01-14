@@ -1,5 +1,7 @@
+@use 'variables' as variables;
+
 #topnav-responsive-container {
-    background-color: #51625C;
+    background-color: variables.$company_color;
     height: 30px;
     position: relative;
     z-index: 200;

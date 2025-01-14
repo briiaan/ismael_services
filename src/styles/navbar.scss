@@ -49,12 +49,26 @@
             }
             #logo {
                 height: inherit;
-                display: flex;
+                display: grid;
                 align-items: center;
                 margin-left: 20px;
-                #logo-text {
-                    height: fit-content;
-                    text-align: start;
+                #logo-a {
+                    display: grid;
+                    place-content: center;
+                    #img-background-color {
+                        width: fit-content;
+                        height: fit-content;
+                    img {
+                        height: 140px;
+                        width: 140px;
+                        translate: 0 -20px;
+                        @media (min-width: variables.$tablet) {
+                            height: fit-content;
+                            width: 200px;
+                            translate: 0 -27px;
+                        }
+                        }
+                }
                  }
             }
             #hamburger-button {
@@ -92,7 +106,7 @@
     font-size: 40px;
     height: 100svh;
     width: 100%;
-    background: #F17F50;
+    background: variables.$company_color;
     position: absolute;
     top: 0px;
     z-index: 300;
@@ -155,14 +169,14 @@
 
 #about {
     z-index: 100;
-    background: #F17F50;
+    background: variables.$company_color;
     position: relative;
 }
 
 #contact {
     z-index: 100;
     position: relative;
-    background: #F17F50;
+    background: variables.$company_color;
     height: 37vh;
     width: 95.3vw;
 }
@@ -184,10 +198,10 @@
         font-size: 20px;
         gap: 40px;
         a {
-            margin-top: 42px;
+            margin-top: 10px;
         }
         p {
-            margin-top: 42px;
+            margin-top: 10px;
         }
         #about-us-nav {
             padding: 13px;
@@ -199,7 +213,7 @@
             background: rgba(238, 238, 238, 0.3);
         }
         #services-nav {
-            margin-top: 42px;
+            margin-top: 10px;
             padding: 13px;
             border-radius: 10px;
             transition: background-color 0.4s;
@@ -210,7 +224,7 @@
         }
 
         #contact-nav {
-            margin-top: 42px;
+            margin-top: 10px;
             padding: 13px;
             border-radius: 10px;
             transition: background-color 0.4s;
@@ -224,8 +238,8 @@
 
 #services-container-nav {
     transition: opacity 0.5s;
-    opacity: 0;
-    background: rgba(241, 127, 80, 0.80);
+    opacity: 0.2;
+    background: variables.$company_color;
     backdrop-filter: blur(2px); 
     z-index: 200;
     position: absolute;
@@ -273,7 +287,7 @@
         transition: color 0.5s; 
     }
     p:not(#services-title) {
-        color: #F8A887;
+        color: variables.$company_color_tan_hue;
     }
     p:not(#services-title):hover {
         color: white;

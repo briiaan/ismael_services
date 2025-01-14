@@ -1,5 +1,7 @@
+@use 'variables' as variables;
+
 #footer {
-    background: #51625C;
+    background: variables.$company_color;
     color: white;
     font-family: Roboto;
     font-size: 18px;

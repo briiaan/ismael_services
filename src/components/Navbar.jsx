@@ -1,5 +1,6 @@
 import {useState, useRef, useEffect} from "react"
 import "../styles/navbar.scss"
+import logo from "../images/logo.png"
 
 export default function Navbar({transparent}) {
     const [isTransparent, setTransparent] = useState(transparent)
@@ -63,7 +64,7 @@ export default function Navbar({transparent}) {
         <div id='nav-container-responsive' ref={nav_container_responsive}>
         <div id='nav-container'>
         <div id='nav-container-grid'>
-        <div id='logo' className="noselect" onMouseOver={() => our_services_menu_off()}><a href="/" id='logo-text'>ISMAEL<br/>SERVICES</a></div>
+        <div id='logo' className="noselect" onMouseOver={() => our_services_menu_off()}><a href="/" id='logo-a'><div id="img-background-color"><img src={logo.src}/></div></a></div>
         <div id='hamburger-button' onClick={() => menuOpen()} className="noselect">
             <svg ref={hamburger} id="hamburger" width="79" height="80" viewBox="0 0 79 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M69.125 63.3332H9.87504C9.00204 63.3332 8.16479 62.982 7.54748 62.3569C6.93017 61.7317 6.58337 60.8839 6.58337 59.9998C6.58337 59.1158 6.93017 58.2679 7.54748 57.6428C8.16479 57.0177 9.00204 56.6665 9.87504 56.6665H69.125C69.998 56.6665 70.8353 57.0177 71.4526 57.6428C72.0699 58.2679 72.4167 59.1158 72.4167 59.9998C72.4167 60.8839 72.0699 61.7317 71.4526 62.3569C70.8353 62.982 69.998 63.3332 69.125 63.3332Z" fill="white"/>

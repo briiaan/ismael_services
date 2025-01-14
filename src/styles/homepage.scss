@@ -1,7 +1,8 @@
 @use 'variables' as variables;
 
 #image-cover {
-    background: rgba(142, 158, 127, 0.5); 
+    background: variables.$company_color; 
+    opacity: 0.5;
     height: 100svh;
     width: 100%;
     position: absolute;
@@ -82,7 +83,7 @@
 }
 
 #green-banner {
-    background: #8E9E7F;
+    background: variables.$company_color;
     height: 120px;
     display: grid;
     place-content: center;
@@ -125,7 +126,7 @@ line-height: normal;
 
 #box-front {
     position: relative;
-    background: #51625C;
+    background: variables.$company_color;
     width: 330px;
     height: 330px;
     width: 90vw;
