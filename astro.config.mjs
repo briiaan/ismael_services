@@ -12,5 +12,6 @@ export default defineConfig({
   server: {
     host: true,         // allow external connections
     port: process.env.PORT ? parseInt(process.env.PORT) : 3000
-  }
+  },
+  site: 'https://www.ismaelchavezservices.com'
 });
