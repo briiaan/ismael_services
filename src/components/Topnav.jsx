@@ -9,7 +9,7 @@ export default function Topnav() {
                 <div id='top-nav-responsive-grid'>
                     <div id='top-nav-elements'>
                     <div className='divider'></div>
-                    <div id='phone'><a href="tel:000-000-0000">+1 (123) 456-7890</a></div>
+                    <div id='phone'><a href="tel:720-510-8161">+1 (720) 510-8161</a></div>
                     <div className='divider'></div>
                     <div id='language'>EN</div>
                     </div>

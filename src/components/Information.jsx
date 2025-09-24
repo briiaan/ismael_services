@@ -64,30 +64,29 @@ export default function Information() {
                 <div id='maps-container'>
                     <div id='google-maps'>
                         <div id='map'>
-                        <iframe width="520" height="388" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=388&amp;hl=en&amp;q=Aurora%20Ave%20Seattle+(Office)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+                        <iframe width="520" height="388" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=388&amp;hl=en&amp;q=15179%20E%20Colfax%20Ave%20Unit%20G%20Aurora+(Office)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
                         </div>
                     </div>
                 </div>
             </div>
-
 
 		</div>
         </div>
         <div id="contact-information">
 			<div id="contact-container">
                 <div id="grid-container-contact">
-			<p id="contact-p" className="mb">123 Anywhere Ave <br/>Seattle, Washington 98444</p>
+			<p id="contact-p" className="mb">15179 E Colfax Ave<br/>Unit G<br/>Aurora, CO 80011</p>
             <div id='grid-contact'>
                 <div id='names-contact'>
-                    <p>Phone:</p>
-                    <p>Fax:</p>
+                    <p>Office:</p>
+                    <p>Cell:</p>
                     <p>Email:</p>
                 </div>
                 <div id='placeholder'></div>
                 <div id='numbers'>
                     <p>+1 (123) 456-7890</p>
-                    <p>+1 (000) 000-0000</p>
-                    <p>inquiry@ismaelservices.com</p>
+                    <p>+1 (720) 584-4036</p>
+                    <p>ismaelchavezservices@hotmail.com</p>
                 </div>
             </div>
             </div>

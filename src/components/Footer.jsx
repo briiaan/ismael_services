@@ -13,7 +13,7 @@ export default function Footer() {
                     <a href="privacy-policy">Privacy Policy</a>
                 </div>
                 <div id='copyright' className="mb1">
-                <p>©Ismael Chavez Services, Inc. All Rights Reserved</p>
+                <p>©Ismael Chavez Services, LLC. All Rights Reserved</p>
                 </div>
             </div>
         </div>

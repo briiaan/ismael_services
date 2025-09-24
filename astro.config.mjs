@@ -1,16 +1,16 @@
 import { defineConfig } from 'astro/config';
 import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import node from "@astrojs/node";
 
-import sitemap from "@astrojs/sitemap";
-
-import cloudflare from "@astrojs/cloudflare";
-
-// https://astro.build/config
 export default defineConfig({
   integrations: [react(), sitemap()],
   output: "server",
-  adapter: cloudflare({
-    imageService: 'cloudflare'
+  adapter: node({
+    mode: "standalone", // Creates its own Node server
   }),
+  server: {
+    host: true,         // allow external connections
+    port: process.env.PORT ? parseInt(process.env.PORT) : 3000
+  }
 });
