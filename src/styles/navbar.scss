@@ -96,6 +96,8 @@
     p {
         width: fit-content;
     }
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #mobile-nav-menu {
@@ -135,7 +137,6 @@
     width: 90vw;
     height: 1px;
     background-color: white;
-    position: absolute;
 }
 
 #services-options {
@@ -157,10 +158,11 @@
         margin-bottom: 8px;
     }
     font-size: 30px;
+    gap: 10px
 }
 
 .expand {
-    height: 150px;
+    height: 200px;
 }
 
 .closed {
@@ -171,6 +173,7 @@
     z-index: 100;
     background: variables.$company_color;
     position: relative;
+    margin-bottom: 10px;
 }
 
 #contact {
@@ -179,6 +182,7 @@
     background: variables.$company_color;
     height: 37vh;
     width: 95.3vw;
+    margin-top: 10px;
 }
 
 #nav-items {

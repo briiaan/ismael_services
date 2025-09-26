@@ -110,6 +110,7 @@ export default function Navbar({transparent}) {
                       <a href="/landscaping-services">Landscaping Services</a>
                       <a href="/commercial-cleaning">Commercial Cleaning</a>
                       <a href="/concrete-services">Concrete Services</a>
+                      <a href="/snow-services">Snow Removal</a>
                       </div>
                     </div>
                     <div className='divider-menu'></div>
@@ -132,6 +133,7 @@ export default function Navbar({transparent}) {
       <p onClick={() => location.href = "/landscaping-services"}>Landscaping</p>
       <p onClick={() => location.href = "/commercial-cleaning"}>Commercial Cleaning</p>
       <p onClick={() => location.href = "/concrete-services"}>Concrete Services</p>
+      <p onClick={() => location.href = "/snow-services"}>Snow Removal</p>
     </div>
   </div>
   </div>
