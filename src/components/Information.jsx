@@ -84,7 +84,7 @@ export default function Information() {
                 </div>
                 <div id='placeholder'></div>
                 <div id='numbers'>
-                    <p>+1 (123) 456-7890</p>
+                    <p>+1 (720) 510-8161</p>
                     <p>+1 (720) 584-4036</p>
                     <p>ismaelchavezservices@hotmail.com</p>
                 </div>
